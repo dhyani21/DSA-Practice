@@ -2,8 +2,21 @@
 
 class Solution:
     def sort012(self,arr,n):
-        arr = arr.sort()
+        c = arr.count(0)
+        c1 = arr.count(1)
+        c2 = arr.count(2)
+        #for i in range(n):
+        #   if arr[i] == 0:
+         #       c += 1
+          #  if arr[i] == 1:
+           #     c1 += 1
+            #if arr[i] == 2:
+             #   c2 += 1
+        arr[0:c] = [0] * c
+        arr[c:c + c1] = [1] * c1
+        arr[c+c1: c+c1+c2] = [2] * c2
         return arr
+        
 
 
 #{ 
