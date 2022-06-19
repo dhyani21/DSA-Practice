@@ -2,8 +2,8 @@
 
 class Solution:
     def sort012(self,arr,n):
-        arr = arr.sort()
-        return arr
+        #arr = arr.sort()
+        return arr.sort()
 
 
 #{ 
